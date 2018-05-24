@@ -1,0 +1,61 @@
+{% extends "accueil/index.html" %}
+{% block content %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/style.css' %}" />
+
+<div class = wrap>
+    <h2>{{ title }}</h2>
+</div>
+<div class="wrapper">
+<!-- Boxes section -->
+<section class="boxes">
+  <div class="box">
+    <img src="{% static 'img/logiph/logipha.png' %}"/>
+    <a href="logipharm.html">
+      <h3>Logipharm</h3>
+    </a>
+    <p> logiciel qui vous permet la gestion de votre officine par excellence, le moyen sûr et fiable pour atteindre vos objectifs.
+      Pour répondre aux besoins des pharmaciennes et des pharmaciens, LOGIPHARM intègre un ensemble d’outils et de fonctionnalités
+      permettant une gestion souple, fiable et optimale de votre officine.</p>
+  </div>
+  <div class="box">
+    <img src="{% static 'img/wincom/wincom.png' %}" alt="">
+    <a href="wincom.html">
+      <h3>Wincom</h3>
+    </a>
+    <p>vous apporte une solution adaptée. Vous gérez et mesurez toute votre activité commerciale de la commande à la livraison
+      : devis, factures, gestion de stocks, nomenclature article, etc.</p>
+  </div>
+  <div class="box">
+    <img src="{% static 'img/windistr/windistr.png' %}" alt="">
+    <a href="windistr.html">
+      <h3>Windistr</h3>
+    </a>
+    <p>WINDISTR est un logiciel de distribution pharmaceutique adapté ,ils vous aides à réduire les coûts d'exploitation
+      tout en améliorant votre service aux clients et à honorer leurs commandes</p>
+  </div>
+  <div class="box">
+    <img  src="{% static 'img/winhop/winHosp.png' %}" alt="">
+    <a href="winhopital.html">
+      <h3>Winhopital</h3>
+    </a>
+    <p>Solution informatique simple d’utilisation pour la gestion des hôpiteaux, complète et évolutive. Entièrement repensé,
+      WINHOSP optimise la gestion de votre Clinique, votre Polyclinique… et favorise la relation patient au quotidien.</p>
+  </div>
+</section>
+<section class="info1">
+  <img  src="{% static 'img/Accueil/phone.png' %}" align=center alt="">
+  <div>
+  </div>
+</section>
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+    {% load staticfiles %}
+<script src="{% static 'app/scripts/jquery.validate.min.js' %}"></script>
+
+{% endblock %}
